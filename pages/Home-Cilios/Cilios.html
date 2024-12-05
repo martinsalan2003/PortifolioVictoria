@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cilios.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Victoria Oliveira</title>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=11952227069&text=ola, victoria desejo agendar um horairo"  target="_blank"><img class="wpp-fixed" src="../../images/icones/iconeFixo.png" alt=""></a>
+
+    <!-- Cabeçalho -->
+    <header id="header">
+       
+       
+       <!-- Menu Hambúrguer -->
+       <div id="hamburger-menu" class="hamburger-menu" onclick="toggleMenu()">
+           &#9776; 
+       </div>
+
+    
+       <nav id="navigation">
+           <ul id="nav-list">
+               <li><a href="../Home-Cilios/Cilios.html" id="home-link">Cìlios</a></li>
+               <li><a href="../Home-Pés/pés.html" id="servicos-link">Pés</a></li>
+               <li><a href="../Home-Designer/dsigner.html" id="contato-link">Sombrancelhas</a></li>
+               <li><a href="../../../index.html" id="sobre-link">Sobre</a></li>
+           </ul>
+       </nav>
+   </header>
+
+
+   <div class="container-Content-Home">
+
+    <section class="hero-section">
+    </section>
+
+
+    <!-- card de apresentação -->
+    <section id="cilios-section">
+        <div id="cilios-brasileiro" class="cilios-info">
+          <h2>Volume Brasileiro</h2>
+          <p>Técnica de alongamento que combina volume e naturalidade, criando um olhar sofisticado e discreto. necessitando manutenções periódicas.</p>
+          
+        </div>
+        <div id="cilios-fioafio" class="cilios-info">
+          <h2>Clássico Fio a fio</h2>
+          <p>Técnica aplicada para proporcionar um olhar mais alongado e entregar ainda mais naturalidade.</p>
+        </div>
+        <div id="cilios-russo" class="cilios-info">
+          <h2>Volume Russo</h2>
+          <p>Técnica que trás um olhar mais marcante com efeito de cílios de boneca. a técnica consiste na aplicação de fãs com fios sintéticos aplicados nos cílios naturais de cada cliente.</p>
+        </div>
+      </section>
+
+      <!-- Galeria de fotos -->
+   <section class="gallery">
+    <div class="title">
+    <h2>Galeria de Fotos</h2>
+    <p>Clique na imagem para ter uma visão ampliada do serviço</p>
+    </div>
+    <img src="../../images/Serviços-cilios/Trabalho1.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/Trabalho2.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/Trabalho3.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/Trabalho4.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/Trabalho5.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/Trabalho6.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+  </section>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+
+
+   <!--  Serviços e valores-->
+   <section id="precos-section">
+    <h1>Serviços e valores</h1>
+    <table id="tabela-precos">
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Preço</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="servico" data-detalhes="volume brasileiro">Volume Brasileiro</td>
+          <td>R$ 110,00</td>
+          <td><button onclick="mostrarDetalhes('brasileiro')">Ver Detalhes</button></td>
+        </tr>
+        <tr>
+          <td class="servico" data-detalhes="volume russo">Volume Russo</td>
+          <td>R$ 130,00</td>
+          <td><button onclick="mostrarDetalhes('russo')">Ver Detalhes</button></td>
+        </tr>
+        <tr>
+          <td class="servico" data-detalhes="fio a fio ">Fio a Fio </td>
+          <td>R$ 90,00</td>
+          <td><button onclick="mostrarDetalhes('fioafio')">Ver Detalhes</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="detalhes-container"></div>
+  </section>    
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div id="footer-top">
+            <div id="footer-logo">
+                <img src="../../images/logos/LogoVictoria.jpg" alt="Logo Site" class="logoFooter">
+                <p>Realçando sua Beleza dos Olhos aos Pés</p>
+            </div>
+    
+    
+            <!-- Links do footer -->
+            <div id="footer-links">
+                <ul>
+                    <h2>Criador do site</h2>
+                    <li><a href="https://api.whatsapp.com/send?phone=11992946537&text=Ola%20Alan,%20estava%20olhando%20um%20pouco%20do%20seu%20trabalho%20no%20Github" target="_blank">Suporte</a></li>
+                    <li><a href="https://github.com/martinsalan2003" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/alan-martins-ferreira-5a8a48233/" target="_blank">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    
+        <!-- Redes sociais e direitos autorais -->
+        <div id="footer-bottom">
+            <div id="social-icons">
+                <a target="_blank" href="https://www.instagram.com/designer_vfernanda"><img src="../../images/icones/icons8-instagram.svg" alt="instagram" class="globla-icons" ></a>
+                <a href="https://www.tiktok.com/@vicfernanda01" target="_blank"><img src="../../images//icones/icons8-tiktok.svg" alt="titok" class="globla-icons"></a>
+                <a href="https://api.whatsapp.com/send?phone=11952227069&text=ola, victoria desejo agendar um horairo" target="_blank"><img src="../../images/icones/icons8-whatsapp.svg" alt="whatsapp" class="globla-icons"></a>
+            </div>
+            <p>©Copyright. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./cilios.js"></script>
+</body>
+</html>

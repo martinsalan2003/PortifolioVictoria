@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Victoria Oliveira</title>
+
+</head>
+
+
+<body>
+
+     <a href="https://api.whatsapp.com/send?phone=11952227069&text=ola, victoria desejo agendar um horairo"  target="_blank"><img class="wpp-fixed" src="./images/icones/iconeFixo.png" alt=""></a>
+
+     <!-- Cabeçalho -->
+     <header id="header">
+        
+        <!-- Menu Hambúrguer -->
+        <div id="hamburger-menu" class="hamburger-menu" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+    
+        <nav id="navigation">
+            <ul id="nav-list">
+                <li><a href="./pages/Home-Cilios/Cilios.html" id="home-link">Cìlios</a></li>
+                <li><a href="./pages/Home-Pés/pés.html" id="servicos-link">Pés</a></li>
+                <li><a href="./pages/Home-Designer/dsigner.html" id="contato-link">Sombrancelhas</a></li>
+                <li><a href="" id="sobre-link">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container-Content-Home">
+
+        <section id="apresentation-section">
+            <div class="content">
+                <h1>Bem-Vindo ao Mundo da beleza! </h1>
+                <p>
+                    Olá! Sou Victoria Fernanda, tenho 26 anos e trabalho com cílios, sobrancelhas e spa dos pés. Minha missão é realçar a sua beleza natural, oferecendo serviços de qualidade e momentos de cuidado e proporcionando a cada cliente uma experiencia unica   
+                </p>
+               
+            </div>
+            <div class="image-container">
+                <div id="circle"></div>
+                <img src="./images/logos/PerfilVic.png" alt="Apresentação" id="apresentation-photo">
+            </div>
+        </section>
+    </div>
+
+
+
+    <section id="certificates-section">
+        <h2>Meus Certificados</h2>
+        <div class="certificates-container">
+            
+            <div class="certificate" onclick="showImage('./images/Certificados/certificadocilios.jpeg')">
+                <img src="./images/Certificados/certificadocilios.jpeg" alt="Certificado de Extensão de Cílios" class="certificate-icon">
+                <h3>Certificado de Extensão de Cílios</h3>
+                <p>Especialização em técnicas avançadas para extensão de cílios, garantindo beleza e naturalidade.</p>
+            </div>
+    
+           
+            <div class="certificate" onclick="showImage('./images/Certificados/certificadosobrancelha.jpeg')">
+                <img src="./images/Certificados/certificadosobrancelha.jpeg" alt="Curso de Designer de Sobrancelhas" class="certificate-icon">
+                <h3>Curso de Designer de Sobrancelhas</h3>
+                <p>Habilidade em modelar sobrancelhas que realçam o rosto e a expressão de cada cliente.</p>
+            </div>
+    
+            
+            <div class="certificate" onclick="showImage('./images/Certificados/certificadoPes.jpg')">
+                <img src="./images/Certificados/certificadoPes.jpg" alt="Certificação em Spa dos Pés" class="certificate-icon">
+                <h3>Certificação em Spa dos Pés</h3>
+                <p>Técnicas exclusivas para proporcionar relaxamento e bem-estar aos pés dos clientes.</p>
+            </div>
+    
+            
+            <div class="certificate" onclick="showImage('./images/Certificados/certificadoplastica.jpeg')">
+                <img src="./images/Certificados/certificadoplastica.jpeg" alt="Certificado em Técnicas de Autocuidado" class="certificate-icon">
+                <h3>Certificação em Plastica Dos Pés</h3>
+                <p>Habilidade em tratamento profundo para remoção de calosidades, rachaduras e ressecamento nos pés</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal de Exibição da Imagem -->
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Imagem do Certificado">
+        </div>
+    </div>
+
+
+
+    
+     <!-- Seção Nosso Espaço -->
+     <section id="space-section">
+        <h2>Nosso Espaço</h2>
+        <div class="space-container">
+            <!-- Espaço de Atendimento -->
+            <div class="space">
+                <img src="./images/espacos/espaco.jpeg" alt="Espaço de Atendimento" class="space-image" data-modal="modal-atendimento">
+                <div class="space-description">
+                    <h3>Espaço de Atendimento</h3>
+                    <p>Um ambiente acolhedor, pensado em oferecer conforto e bem-estar durante os seus cuidados de beleza.</p>
+                </div>
+            </div>
+
+            <!-- Espaço do Café -->
+            <div class="space">
+                <img src="./images/espacos/espacoCafe.jpg" alt="Espaço do Café" class="space-image" data-modal="modal-cafe">
+                <div class="space-description">
+                    <h3>Espaço do Café</h3>
+                    <p>Desfrute um delicioso café, criando um momento de pausa e tranquilidade durante sua visita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Modal Espaço de Atendimento -->
+ <div id="modal-atendimento" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./images/espacos/espaco.jpeg" alt="Espaço de Atendimento">
+       
+    </div>
+</div>
+
+<!-- Modal Espaço do Café -->
+<div id="modal-cafe" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./images/espacos/espacoCafe.jpg" alt="Espaço do Café">
+    </div>
+</div>
+
+    <footer id="footer">
+        <div id="footer-top">
+            <div id="footer-logo">
+                <img src="./images/logos/LogoVictoria.jpg" alt="Logo Site" class="logoFooter">
+                <p>Realçando sua Beleza dos Olhos aos Pés</p>
+            </div>
+            <!-- Links principais -->
+            <div id="footer-links">
+                <ul>
+                    <h2>Criador do site</h2>
+                    <li><a href="https://api.whatsapp.com/send?phone=11992946537&text=Ola%20Alan,%20estava%20olhando%20um%20pouco%20do%20seu%20trabalho%20no%20Github" target="_blank">Suporte</a></li>
+                    <li><a href="https://github.com/martinsalan2003" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/alan-martins-ferreira-5a8a48233/" target="_blank">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Redes sociais e direitos autorais -->
+        <div id="footer-bottom">
+            <div id="social-icons">
+                <a target="_blank" href="https://www.instagram.com/designer_vfernanda"><img src="./images/icones/icons8-instagram - Copia.svg" alt="instagram" class="globla-icons" ></a>
+                <a href="https://www.tiktok.com/@vicfernanda01" target="_blank"><img src="./images/icones/icons8-tiktok.svg" alt="titok" class="globla-icons"></a>
+                <a href="https://api.whatsapp.com/send?phone=11952227069&text=ola, victoria desejo agendar um horairo" target="_blank"><img src="./images/icones/icons8-whatsapp.svg" alt="whatsapp" class="globla-icons"></a>
+            </div>
+            <p>©Copyright. All rights reserved.</p>
+        </div>
+    </footer>
+   
+    <script src="script.js"></script>
+        
+</body>
+</html>

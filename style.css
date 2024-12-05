@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    background-color: #f4f4f4;
+    font: bold 1rem "Montserrat", sans-serif;
+}
+
+.wpp-fixed{
+    width: 60px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    
+}
+
+/* Estilos do cabeçalho */
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #153c5b;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header h1 {
+    color: #c1a56a;
+    font-family: "Dancing Script", cursive;
+}
+
+
+
+#navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font: bold 1rem "Montserrat", sans-serif;
+  color: #fff;
+}
+#navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigation ul li {
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+#navigation ul li:hover {
+   opacity: 0.6;
+}
+
+
+/* Menu Hambúrguer */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* section de apresentação */
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1c2c63;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+#apresentation-section {
+    background: rgb(122,178,211);
+    background: radial-gradient(circle, rgba(122,178,211,1) 0%, rgba(197,211,232,1) 95%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+/* Content */
+#apresentation-section .content {
+    max-width: 150%;
+}
+
+#apresentation-section .content h1 {
+    font-size: 32px;
+    color: #153c5b;
+    margin-bottom: 20px;
+}
+
+#apresentation-section .content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circulo da imagem */
+#circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #153c5b;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+#apresentation-photo {
+    
+    position: relative;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #apresentation-section {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+/* certificados */
+#certificates-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#certificates-section h2 {
+    font-size: 32px;
+    color: #153c5b;
+    margin-bottom: 30px;
+}
+
+/* Container dos Certificados */
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Cada Certificado */
+.certificate {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícone dos Certificados */
+.certificate-icon {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Descrição do Certificado */
+.certificate h3 {
+    font-size: 20px;
+    color: #153c5b;
+    margin-bottom: 10px;
+}
+
+.certificate p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Modal (Imagem em tamanho maior) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .certificates-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Section - Nosso Espaço */
+#space-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#space-section h2 { 
+    font-size: 32px;
+    color: #153c5b;
+    margin-bottom: 30px;
+}
+
+    #space-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .space-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .space {
+        max-width: 300px;
+        text-align: left;
+    }
+
+    .space img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .space-description {
+        margin-top: 10px;
+    }
+    .space-description h3 {
+     font-size: 20px;
+    color: #153c5b;
+    margin-bottom: 10px;
+    }
+
+
+    /* Modal */
+ /* Estilo do Modal */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+    }
+}
+ 
+
+/* Space Container */
+.space-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual Space */
+.space {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.space:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Space Images */
+.space-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Space Description */
+.space-description {
+    padding: 20px;
+}
+
+.space-description h3 {
+    font-size: 22px;
+    color: #153c5b;
+    margin-bottom: 10px;
+}
+
+.space-description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .space-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .space {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+/* nicio do footer */
+#footer {
+    background-color: #153c5b;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Parte superior do footer */
+#footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 20px;
+}
+
+/* Logo */
+#footer-logo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#footer-logo p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Links */
+#footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-links ul li {
+    margin: 5px 0;
+}
+
+#footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+#footer-links ul li a:hover {
+    color: #ccb786;
+}
+
+/* Parte inferior do footer */
+#footer-bottom {
+    text-align: center;
+}
+
+#social-icons {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+.logoFooter {
+    height: 100px;
+}
+.globla-icons {
+    height: 30px;
+}
+
+#social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#social-icons a:hover {
+    color: #f1c40f;
+}
+
+#footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer-links {
+        justify-content: center;
+    }
+}
+
+
+
+/* Responsividade  do header */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    #logo-container {
+        margin-bottom: 15px;
+    }
+
+    #navigation {
+        display: none; /* Esconde o menu em telas pequenas */
+        width: 100%;
+    }
+
+    #navigation ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #navigation ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #navigation ul li a {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
+}
+
+@media (max-width: 480px) {
+    #logo-text {
+        font-size: 20px;
+    }
+
+    #navigation ul li a {
+        font-size: 14px;
+    }
+}
