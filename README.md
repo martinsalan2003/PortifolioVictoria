@@ -24,7 +24,7 @@ Este repositório apresenta o projeto desenvolvido para uma profissional de bele
 
 ## 🌟 Visualizações  
 
-*(Adicione aqui imagens ou GIFs para ilustrar o design e as funcionalidades da página.)*  
+![Demonstração do projeto](./images/preview/preview.gif)  
 
 ---
 
