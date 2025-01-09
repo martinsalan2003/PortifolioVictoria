@@ -1,11 +1,11 @@
 function toggleMenu() {
-    var nav = document.getElementById('navigation');
-    // Alterna a exibição do menu
-    if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-    } else {
-        nav.style.display = 'flex';
-    }
+  var nav = document.getElementById('navigation');
+  if (nav.style.display === 'block') {
+      nav.style.display = 'none';
+  } else {
+      nav.style.display = 'block';
+      
+  }
 }
 
 // função que exibe o detalhe

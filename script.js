@@ -1,13 +1,12 @@
-
 function toggleMenu() {
     var nav = document.getElementById('navigation');
-    // Alterna a exibição do menu
-    if (nav.style.display === 'flex') {
+    if (nav.style.display === 'block') {
         nav.style.display = 'none';
     } else {
-        nav.style.display = 'flex';
+        nav.style.display = 'block';
+        
     }
-}
+  }
 
 
 // funções do modal 

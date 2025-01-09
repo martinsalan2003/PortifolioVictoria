@@ -65,6 +65,11 @@ body {
     cursor: pointer;
 }
 
+.menu-label {
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
 
 
 /* Estilo de entrada */

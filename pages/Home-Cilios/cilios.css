@@ -55,14 +55,18 @@ body {
 #navigation ul li:hover {
    opacity: 0.6;
 }
-
-
 /* Menu Hambúrguer */
 .hamburger-menu {
-    display: none;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-label {
+font-weight: bold;
+color: #fff;
+font-size: 12px;
 }
 
 #cilios-section {

@@ -1,12 +1,11 @@
 // exibe o menu no celular menu no celular 
 function toggleMenu() {
-    var nav = document.getElementById('navigation');
-
-    if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-    } else {
-        nav.style.display = 'flex';
-    }
+  var nav = document.getElementById('navigation');
+  if (nav.style.display === 'block') {
+      nav.style.display = 'none';
+  } else {
+      nav.style.display = 'block';
+  }
 }
 
 

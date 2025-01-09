@@ -22,22 +22,25 @@
     <!-- Cabeçalho -->
     <header id="header">
        
-       
-       <!-- Menu Hambúrguer -->
-       <div id="hamburger-menu" class="hamburger-menu" onclick="toggleMenu()">
-           &#9776; 
+      <!-- menu para celular -->
+     <div id="hamburger-container" class="hamburger-container" onclick="toggleMenu()">
+       <div id="hamburger-menu" class="hamburger-menu">&#9776;</div>
+       <div class="hamburger-menu menu-label" >
+         <label>Menu</label>
        </div>
+       
+   </div>
 
-    
-       <nav id="navigation">
-           <ul id="nav-list">
-               <li><a href="../Home-Cilios/Cilios.html" id="home-link">Cìlios</a></li>
-               <li><a href="../Home-Pés/pés.html" id="servicos-link">Pés</a></li>
-               <li><a href="../Home-Designer/dsigner.html" id="contato-link">Sobrancelhas</a></li>
-               <li><a href="../../index.html" id="sobre-link">Sobre</a></li>
-           </ul>
-       </nav>
-   </header>
+ 
+      <nav id="navigation">
+          <ul id="nav-list">
+              <li><a href="../Home-Cilios/Cilios.html" id="home-link">Cìlios</a></li>
+              <li><a href="../Home-Pés/pés.html" id="servicos-link">Pés</a></li>
+              <li><a href="../Home-Designer/dsigner.html" id="contato-link">Sobrancelhas</a></li>
+              <li><a href="../../index.html" id="sobre-link">Sobre</a></li>
+          </ul>
+      </nav>
+  </header>
 
 
    <div class="container-Content-Home">
@@ -53,7 +56,7 @@
           <p>Técnica de alongamento que combina volume e naturalidade, criando um olhar sofisticado e discreto. necessitando manutenções periódicas.</p>
           
         </div>
-        <div id="cilios-fioafio" class="cilios-info">
+        <div id="cilios-fioafio" class="cilios-info" >
           <h2>Clássico Fio a fio</h2>
           <p>Técnica aplicada para proporcionar um olhar mais alongado e entregar ainda mais naturalidade.</p>
         </div>
@@ -69,13 +72,13 @@
     <h2>Galeria de Fotos</h2>
     <p>Clique na imagem para ter uma visão ampliada do serviço</p>
     </div>
-    <img src="../../images/Serviços-cilios/Trabalho4.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/Trabalho4.jpg" alt="Foto 1" class="gallery-img" loading="lazy" onclick="openModal(this)">
     <img src="../../images/Serviços-cilios/lash3.jpg
     " alt="Foto 2" class="gallery-img" onclick="openModal(this)">
-    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 3" class="gallery-img" onclick="openModal(this)">
-    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 1" class="gallery-img" onclick="openModal(this)">
-    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 4" class="gallery-img" onclick="openModal(this)">
-    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 5" class="gallery-img" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 3" class="gallery-img" loading="lazy" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 1" class="gallery-img" loading="lazy" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 4" class="gallery-img" loading="lazy" onclick="openModal(this)">
+    <img src="../../images/Serviços-cilios/lash3.jpg" alt="Foto 5" class="gallery-img" loading="lazy" onclick="openModal(this)">
   </section>
 
   <div id="modal" class="modal">

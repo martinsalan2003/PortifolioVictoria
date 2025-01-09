@@ -58,12 +58,18 @@ body {
 
 
 /* Menu Hambúrguer */
-.hamburger-menu {
-    display: none;
-    font-size: 30px;
+  .hamburger-menu {
+      display: none;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+  }
+  
+  .menu-label {
+    font-weight: bold;
     color: #fff;
-    cursor: pointer;
-}
+    font-size: 12px;
+  }
 
 
 /* section de apresentação */
@@ -146,8 +152,7 @@ body {
 @media (max-width: 768px) {
     #apresentation-section {
         flex-direction: column;
-    }
-    
+    }      
 }
 
 
